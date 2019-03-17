@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TOTAL_COUNT = "total_count";
 
     public void randomMe(View view){
-        Intent randomIntent = new Intent(this, Random.class);
+        Intent randomIntent = new Intent(this, SecondActivity.class);
         TextView showCountTextView = (TextView) findViewById(R.id.textView);
         String countString = showCountTextView.getText().toString();
         int count = Integer.parseInt(countString);

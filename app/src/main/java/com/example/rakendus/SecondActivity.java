@@ -1,10 +1,12 @@
 package com.example.rakendus;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import java.util.Random;
 
-public class Random extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +17,7 @@ public class Random extends AppCompatActivity {
 
     private static final String TOTAL_COUNT = "total_count";
 
+    @SuppressLint("StringFormatInvalid")
     public void showRandomNumber () {
         // Get the text view where the random number will be displayed
         TextView randomView = (TextView)
